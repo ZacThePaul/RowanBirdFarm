@@ -6,20 +6,97 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/0c42fac8bd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  Hello world!!!
+
+  <header>
+
+    <video class="bg-video" playsinline autoplay muted loop>
+      <source src="assets/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <div class="inner-header">
+      <img src="assets/rowan-bird-farm-logo-mobile.png" alt="Rowan Bird Farm logo" class="rbf-logo">
+      <i class="menu-toggle fa-regular fa-bars fa-lg"></i>
+
+      <nav class="menu menu-closed">
+        <i class="menu-close fa-light fa-xmark fa-lg"></i>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-text">
+      <h1>ROWANBIRD FARM</h1>
+      <sub>LOCAL. REAL FOOD. PAY WHAT YOU CAN.</sub>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="about">
+      <h2>About Rowanbird Farm</h2>
+      <p>We are a small-scale backyard farm in Montague, Massachusetts. We are right down the street from the fish
+        Hatchery!</p>
+
+      <p>2023 will be our first year growing at this property, we are so excited to learn more about the land we're
+        living and working on.</p>
+
+      <p>Our goals for the coming years are to help provide </p>
+
+      <h3>Our Principles</h3>
+      <p>Rowanbird farm is run on a set of firm principles based on 3 key concepts:</p>
+      <ul>
+        <li>Earth Care</li>
+        <li>People Care</li>
+        <li>Fair Share</li>
+      </ul>
+
+      <h3>Our Methodology</h3>
+      <p>At Rowanbird Farm, we're committed to growing 100% natural food using regenerative practices. We practice
+        "no-till farming", which involves minimizing disturbance to the soil's microbiology throughout the year because
+        <strong>we're not just growing food, we're growing soil</strong>. Instead of using machinery, we rely on
+        naturally occurring
+        microbiology, such as insects and fungi, to loosen and aerate our soil. This not only helps the environment, but
+        it also results in the highest quality food for our family and yours
+      </p>
+
+      <button><a href="#">Learn more about Rowanbird Farm</a></button>
+
+    </section>
+    <section class="products" style="background-color: #A4B3D3;">
+      <h2>Our Products</h2>
+      <ul>
+        <li>Fresh Eggs</li>
+        <li>Chicken</li>
+        <li>Duck</li>
+        <li>Goose</li>
+      </ul>
+    </section>
+    <section class="location">
+      <h2>Location</h2>
+      <p>Rowan Bird Farm is located at 123 Farm Road, Smallville, USA.</p>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: 555-555-5555</p>
+      <p>Email: rowanbirdfarm@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>Copyright © <span class="footer-year"></span></footer>
+
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
-
 </body>
 
 </html>

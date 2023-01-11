@@ -1,4 +1,141 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700&display=swap');
+
+/* Default Styles */
 html, body {
   height: 100%;
+  background-color: #D3C4A4;
+  margin: 0 !important;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Colors */
+:root {
+  --primary-black: #061b2b;
+}
+
+button {
+  color: var(--primary-black);
+  border: 2px solid var(--primary-black);
+  padding: 20px 35px;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: #D3C4A4;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #D3C4A4;
+  background-color: var(--primary-black);
+}
+
+button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img.rbf-logo {
+  width: 25vw;
+  height: 25vw;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+header {
+  position: relative;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-header {
+  max-width: 90%;
+  width: 90%;
+  height: 100px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.inner-header i.menu-toggle {
+  color: white;
+}
+
+.header-text {
+  position: relative;
+  color: white;
+  text-align: center;
   width: 100%;
+}
+
+.header-text h1 {
+  margin-bottom: 10px;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+.menu-close:hover {
+  cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.menu-open {
+    right: 0;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(22 42 23 / 51%);
+}
+
+/* Apparently 1.618em is the "golden ratio" for font size to line height */
+main section {
+  max-width: 90%;
+  margin: auto;
+  color: var(--primary-black);
+  line-height: 1.618em; 
+  margin-top: 30px;
+}
+
+main section.products {
+  max-width: 100%;
+}
+
+main hr {
+  margin-block-end: 20px;
+  width: 25%;
+  margin-left: 0;
+  border-color: var(--primary-black);
+  border-width: 0.5px;
 }
